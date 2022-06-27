@@ -9,7 +9,10 @@
     "dev": "lwr serve",
     "start": "lwr serve --mode prod",
     "start:compat": "lwr serve --mode compat",
-    "start:prod-compat": "lwr serve --mode prod-compat"
+    "start:prod-compat": "lwr serve --mode prod-compat",
+    "build": "lwr build --outputDir \"dist\" --mode prod",
+    "build:compat": "lwr build --outputDir \"dist\" --mode compat",
+    "build:prod-compat": "lwr build --outputDir \"dist\" --mode prod-compat"
   },
   "dependencies": {
     "@salesforce-ux/design-system": "^2.18.1",
