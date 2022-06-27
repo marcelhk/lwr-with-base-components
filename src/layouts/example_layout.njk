@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title></title>
+        <!-- Import Salesforce Lightning Design System (SLDS) -->
+        <!-- To ensure Lightning Web Components can use the SLDS, synthetic shadow must be configured for any routes using this layout -->
+        <link rel="stylesheet" href="$sldsDir/styles/salesforce-lightning-design-system.min.css" />
+
+        <!-- Import custom global styles -->
+        <!-- Import this after importing SLDS to allow overriding of the SLDS styles -->
+        <link rel="stylesheet" href="$assetsDir/css/main.css"/>
+    </head>
+    <body>
+        <div class="slds-theme_default">
+            {{ body | safe }}
+            {{ lwr_resources | safe }}
+        </div>
+    </body>
+</html>
